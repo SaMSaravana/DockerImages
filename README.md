@@ -1,0 +1,8 @@
+# DockerImages
+Docker projects by sam
+
+# Ubuntu with Curl
+FROM ubuntu:trusty
+MAINTAINER Sam <@TheSaravanas>
+
+RUN apt-get update && apt-get install -y curl && apt-get clean && rm -rf /var/lib/apt/lists
